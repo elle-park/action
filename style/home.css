@@ -6,31 +6,12 @@ body {
 }
 
 .header {
-  background-image: url('header-background.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.overlay {
   position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.5);
 }
 
-.wrapper {
-  max-width: 1000px;
-  margin: 50px auto;
-}
 
 .description {
-
-  padding-top:50px;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-right: 50px;
+  padding:50px 200px 0px 200px;
   position: absolute;
   text-align: center;
 }
@@ -50,7 +31,7 @@ body {
   background:#9b1c1c;
   border-radius: 0;
   color:#faf9ef;
-  margin: 20px;
+  margin: 10px;
 }
 .description button:hover {
   border:1px solid #faf9ef;
@@ -67,38 +48,6 @@ body {
      color:#d4867e;
      text-decoration:none;
      cursor:pointer;
-}
-
-/*--- footer ---*/
-.page-footer {
-  background-color: #042039;
-  color: #faf9ef;
-  padding: 20px 0 10px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-.footer{
-  position: absolute;
-  left:0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-}
-.page-footer p {
-  color: #d4867e;
-  padding: 5px 0;
-}
-.footer-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
-.footer-img img{
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 @media only screen and (max-width: 1000px) {

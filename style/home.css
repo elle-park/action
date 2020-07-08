@@ -4,27 +4,6 @@ body {
   font-family: Helvetica Neue, Arial, sans-serif;
   text-align: center;
 }
-/*--- navigation bar ---*/
-.navbar {
-  background:white;
-  border-bottom: 3px solid transparent;
-}
-.nav-link,
-.navbar-brand {
-  color: #00283d;
-  cursor: pointer;
-}
-.nav-link {
-  margin-right: 1em !important;
-  border-bottom: 3px solid transparent
-}
-.nav-link:hover {
-  color: #9b1c1c;
-  border-bottom: 3px solid #042039;
-}
-.navbar-collapse {
-  justify-content: flex-end;
-}
 
 .header {
   background-image: url('header-background.jpg');
@@ -47,21 +26,22 @@ body {
 }
 
 .description {
-  left: 50%;
-  position: absolute;
-  top: 45%;
-  transform: translate(-50%, -55%);
+  margin: 50px auto;
+  padding-top:50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  position: relative;
   text-align: center;
 }
-.description h1 {
-  color: #faf9ef;
+.description br{
+  size: 10px;
 }
-.description h3 {
-  color: #faf9ef;
+.description h1, h2, h3 {
+  color: #042039;
 }
 .description p {
-  color: #faf9ef;
-  font-size: 1.3rem;
+  color: #042039;
+  font-size: 15px;
   line-height: 1.5;
 }
 .description button {
@@ -117,23 +97,4 @@ body {
 .footer-img img{
   margin-left: 10px;
   margin-right: 10px;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-
-  .description {
-    left: 0;
-    padding: 0 15px;
-    position: absolute;
-    top: 10%;
-    transform: none;
-    text-align: center;
-  }
-  .description h1 {
-    font-size: 2em;
-  }
-  .description p {
-    font-size: 1.2rem;
-  }
 }

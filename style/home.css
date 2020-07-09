@@ -9,6 +9,31 @@ body {
   position: absolute;
 }
 
+/* Create columns that floats next to each other */
+.column1 {
+  float: center;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.column2 {
+  top: 10%;
+  float: right;
+  width: 39%;
+  padding: 10px;
+  border: 3px solid black;
+  height:50%;
+  text-align: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .description {
   padding:50px 200px 20px 200px;
@@ -32,6 +57,7 @@ body {
   border-radius: 0;
   color:#faf9ef;
   margin: 10px;
+  font-size: 18px;
 }
 .description button:hover {
   border:1px solid #faf9ef;
@@ -48,6 +74,18 @@ body {
      color:#d4867e;
      text-decoration:none;
      cursor:pointer;
+}
+
+.column2 button {
+  background:white;
+  border: 1px solid white;
+  border-radius: 0;
+  color:#042039;
+}
+.column2 button:hover {
+  border-bottom:1px solid #9b1c1c;
+  background:white;
+  color:#042039;
 }
 
 .template {
@@ -67,6 +105,18 @@ body {
   line-height: 1.5;
 }
 
+.dropdown-btn {
+  text-decoration: none;
+  font-size: 16px;
+  color: #042039;
+  display: block;
+  border: none;
+  background: #faf9ef;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
 .dropdown-container {
   display: none;
   background-color: white;
@@ -79,9 +129,21 @@ body {
   color: #042039;
 }
 
+.dropdown-container2 {
+  display: none;
+  background-color: white;
+}
+.dropdown-container2 p {
+  font-size: 15px;
+  color: #042039;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 /* caret down icon */
 .fa-caret-down {
   float: right;
+  size: 20px;
   padding-right: 8px;
 }
 
@@ -98,6 +160,13 @@ td, th {
 }
 
 @media only screen and (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column2, .column1 {
+    width: 100%;
+  }
   .description {
     margin: 10px auto;
     padding-top:10px;

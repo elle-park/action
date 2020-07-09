@@ -107,6 +107,15 @@ td, th {
     position: relative;
     text-align: center;
   }
+  .template {
+    margin: 10px auto;
+    padding-top:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:10px;
+    position: relative;
+    text-align: left;
+  }
   .footer-img{
     display: relative;
     margin-left: auto;

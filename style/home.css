@@ -107,6 +107,9 @@ td, th {
     position: relative;
     text-align: center;
   }
+  table {
+    font-size:10px;
+  }
   .template {
     margin: 10px auto;
     padding-top:10px;
